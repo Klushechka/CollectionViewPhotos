@@ -15,5 +15,6 @@ class ImageVC: UIViewController {
     var bigPhoto = UIImage()
     override func viewDidLoad() {
         super.viewDidLoad()
+        bigImage.image = bigPhoto
     }
 }

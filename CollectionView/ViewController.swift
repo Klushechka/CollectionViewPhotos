@@ -45,7 +45,7 @@ class ViewController: UICollectionViewController {
             // load images in parallers
             // code
             let session = URLSession(configuration: .ephemeral)
-            for i in 0...2 {
+            for _ in 0...2 {
                 let url = URL(string: links[self.currentImageN])
                 self.currentImageN += 1
                 let task = session.dataTask(with: url!) {(data, responce, error) in
@@ -102,9 +102,10 @@ class ViewController: UICollectionViewController {
         self.present(alertController, animated: true, completion: nil)
         }
 
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let ImageVC = segue.destination as? ImageVC {
-            ImageVC.bigPhoto = self.myImageArray[myIndex.row]
+                ImageVC.bigPhoto = self.myImageArray[myIndex.row]
         }
     }
     
