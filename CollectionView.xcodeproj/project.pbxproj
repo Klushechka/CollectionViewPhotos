@@ -14,6 +14,8 @@
 		320E62891EDCA8E00053E03F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 320E62871EDCA8E00053E03F /* LaunchScreen.storyboard */; };
 		320E62911EDCAAE20053E03F /* ImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320E62901EDCAAE20053E03F /* ImageVC.swift */; };
 		32E359881EDF4CAE00C21F1D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E359871EDF4CAE00C21F1D /* CollectionViewCell.swift */; };
+		846D6B1A1EEC140D00C83DDF /* ImageUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6B191EEC140D00C83DDF /* ImageUpload.swift */; };
+		846D6B1C1EEC3D6800C83DDF /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6B1B1EEC3D6800C83DDF /* NotificationNameExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		320E628A1EDCA8E00053E03F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		320E62901EDCAAE20053E03F /* ImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageVC.swift; sourceTree = "<group>"; };
 		32E359871EDF4CAE00C21F1D /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		846D6B191EEC140D00C83DDF /* ImageUpload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUpload.swift; sourceTree = "<group>"; };
+		846D6B1B1EEC3D6800C83DDF /* NotificationNameExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +64,14 @@
 			children = (
 				320E627E1EDCA8E00053E03F /* AppDelegate.swift */,
 				320E62801EDCA8E00053E03F /* ViewController.swift */,
+				846D6B191EEC140D00C83DDF /* ImageUpload.swift */,
 				320E62901EDCAAE20053E03F /* ImageVC.swift */,
 				32E359871EDF4CAE00C21F1D /* CollectionViewCell.swift */,
 				320E62821EDCA8E00053E03F /* Main.storyboard */,
 				320E62851EDCA8E00053E03F /* Assets.xcassets */,
 				320E62871EDCA8E00053E03F /* LaunchScreen.storyboard */,
 				320E628A1EDCA8E00053E03F /* Info.plist */,
+				846D6B1B1EEC3D6800C83DDF /* NotificationNameExtension.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -145,6 +151,8 @@
 			files = (
 				320E62811EDCA8E00053E03F /* ViewController.swift in Sources */,
 				320E627F1EDCA8E00053E03F /* AppDelegate.swift in Sources */,
+				846D6B1A1EEC140D00C83DDF /* ImageUpload.swift in Sources */,
+				846D6B1C1EEC3D6800C83DDF /* NotificationNameExtension.swift in Sources */,
 				32E359881EDF4CAE00C21F1D /* CollectionViewCell.swift in Sources */,
 				320E62911EDCAAE20053E03F /* ImageVC.swift in Sources */,
 			);
