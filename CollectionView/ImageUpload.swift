@@ -9,8 +9,7 @@
 import Foundation
 import UIKit
 
-class ImageUpload{
-    
+class ImageUpload {
     static let shared = ImageUpload()
     private init() {}
         var currentImageN = 0
@@ -26,7 +25,7 @@ class ImageUpload{
                     DispatchQueue.main.async {
                         guard let data = data else {print("Data is empty")
                             return }
-                            self.myImageArray.append(UIImage(data: data)!)
+                            self.myImageArray.append(self.resizeImage(UIImage(data: data)!, newHeight: 100))
                             NotificationCenter.default.post(name: .reload, object: self)
                     }
                 }
@@ -77,6 +76,17 @@ class ImageUpload{
                 }
             task1.resume()
         }
+    }
+    
+    func resizeImage(_ image: UIImage, newHeight: CGFloat) -> UIImage {
+        let scale = newHeight / image.size.height
+        let newWidth = image.size.width * scale
+        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
+        image.draw(in: CGRect(x: 0, y: 0, width: newWidth, height: newHeight))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        let imageData = UIImageJPEGRepresentation(newImage!, 0.1)! as Data
+        UIGraphicsEndImageContext()
+        return UIImage(data:imageData)!
     }
 }
 

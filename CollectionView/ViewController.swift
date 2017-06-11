@@ -17,7 +17,6 @@ class ViewController: UICollectionViewController{
     var myIndex = IndexPath()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         NotificationCenter.default.addObserver(self, selector: #selector(reload), name: .reload, object: nil)
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             self.navigationItem.prompt = "Please, add new images by button \"+\""
@@ -33,6 +32,7 @@ class ViewController: UICollectionViewController{
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
         cell.image.image = ImageUpload.shared.myImageArray[indexPath.row]
+        
         return cell
     }
     
